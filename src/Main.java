@@ -8,6 +8,7 @@ public class Main {
         hello();
         positiveOrNegative(number);
         positiveOrZeroOrNegative(number);
+        bartender(name);
     }
 
     private static void hello() {
@@ -29,6 +30,25 @@ public class Main {
             System.out.println("The number is zero!");
         } else {
             System.out.println("The number is positive");
+        }
+    }
+
+    private static void bartender(String name) {
+        switch (name) {
+            case "Mark Mesander":
+                System.out.println("Het favoriete drankje van " + name + " is whiskey!");
+                break;
+            case "Emeraude Mesander":
+                System.out.println("Het favoriete drankje van " + name + " is een pornstar martini!");
+                break;
+            case "Rutger Siebbeles":
+                System.out.println("Het favoriete drankje van " + name + " is een cosmopolitan!");
+                break;
+            case "Rik van den Braak":
+                System.out.println("Het favoriete drankje van " + name + " is een liefmans!");
+                break;
+            default:
+                System.out.println("Het favoriete drankje van deze persoon is niet bekend!");
         }
     }
 }
