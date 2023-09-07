@@ -1,21 +1,22 @@
 public class Main {
     public static void main(String[] args) {
-        int number = 0;
+        int number = 6;
         int input1 = 4;
-        int input2 = 8;
+        int input2 = 20;
         String name = "Mark Mesander";
 
         hello();
         positiveOrNegative(number);
         positiveOrZeroOrNegative(number);
         bartender(name);
+        sum(input1, input2);
     }
 
     private static void hello() {
         System.out.println("Hello world!");
     }
 
-    private static void positiveOrNegative(int number){
+    private static void positiveOrNegative(int number) {
         if (number >= 0) {
             System.out.println("The number is positive!");
         } else {
@@ -50,6 +51,10 @@ public class Main {
             default:
                 System.out.println("Het favoriete drankje van deze persoon is niet bekend!");
         }
+    }
+
+    private static void sum(int input1, int input2) {
+        System.out.println(input1 + input2);
     }
 }
 
